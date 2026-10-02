@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-surface-50 text-surface-900 font-sans;
+  }
+}
+
+.scroll-smooth::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scroll-smooth::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-smooth::-webkit-scrollbar-thumb {
+  @apply bg-surface-300 rounded-full;
+}
